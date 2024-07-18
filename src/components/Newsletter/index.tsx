@@ -8,18 +8,34 @@ const Newsletter = () => {
   const [emailAddress, setEmailAddress] = useState("");
   const [showForm, setShowForm] = useState(true);
 
+  // const handleSubmit = async (e: FormEvent) => {
+  //   e.preventDefault();
+
+  //   POST().then((res) => {
+  //     if (res.status === 200) {
+  //       setShowForm(false);
+  //     } else {
+  //       setShowForm(true);
+  //     }
+  //   });
+  // };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    POST({
-      email: emailAddress,
-    }).then((res) => {
-      if (res.status === 200) {
-        setShowForm(false);
-      } else {
-        setShowForm(true);
-      }
+    const response = await fetch("/api/newsletter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: emailAddress,
+      }),
     });
+
+    const data = await response.json();
+    if (data) setShowForm(false);
+    else setShowForm(true);
   };
 
   return (

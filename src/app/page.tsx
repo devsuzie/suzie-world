@@ -21,7 +21,7 @@ async function getPosts() {
 }
 
 async function Home() {
-  const posts: Post[] = await getPosts();
+  const posts = await getPosts();
 
   return (
     <>
@@ -91,7 +91,7 @@ async function Home() {
 
             <div className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 py-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {posts?.length > 0 &&
-                posts.slice(0, 3).map((post) => (
+                posts.slice(0, 3).map((post: any) => (
                   <article
                     key={post._id}
                     className="group relative flex flex-col items-start p-6"

@@ -1,11 +1,13 @@
 require("dotenv").config();
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-interface RequestBody {
+interface SubscribeRequest {
   email: string;
 }
 
-export async function POST({ email }: RequestBody) {
+export async function POST(request: Request) {
+  const { email }: SubscribeRequest = await request.json();
+
   const response = await fetch(
     `https://api.convertkit.com/v3/forms/${process.env.NEXT_PUBLIC_CONVERT_KIT_FORM_ID}/subscribe`,
     {

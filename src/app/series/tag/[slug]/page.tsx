@@ -46,7 +46,7 @@ const Tag = async ({ params }: any) => {
           </div>
 
           <div className="flex max-w-4xl flex-col space-y-16 mt-16 sm:mt-20">
-            {posts.map((post) => (
+            {posts.map((post: any) => (
               <article
                 key={post._id}
                 className="md:grid md:grid-cols-4 md:items-baseline"

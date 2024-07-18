@@ -14,12 +14,13 @@
 
 html,
 body {
-  /* font-family: "Outfit", sans-serif; */
   font-family: "Karla", sans-serif;
   cursor: url("/assets/cursor.svg"), auto;
 }
 
-h1, h2, h3: {
+h1,
+h2,
+h3 {
   font-size: 64px;
 }
 
@@ -44,70 +45,3 @@ input {
 .highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #f9c664 50%);
 }
-
-.typing-effect {
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.15em solid black;
-  animation:
-    typing 3s steps(30, end),
-    blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Darumadrop One", sans-serif;
-} */
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
