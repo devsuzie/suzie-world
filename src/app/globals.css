@@ -2,7 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
+@font-face {
+  font-family: "Darumadrop One";
+  src: url("/fonts/DarumadropOne-Regular.ttf") format("truetype");
+}
+
+html,
+body {
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Karla", sans-serif;
+  cursor: url("/assets/cursor.svg"), auto;
+}
+
+h1, h2, h3: {
+  font-size: 64px;
+}
+
+div,
+p,
+article,
+time,
+input,
+button {
+  font-size: 22px;
+}
+
+a,
+button {
+  cursor: url("/assets/cursor.svg"), pointer;
+}
+
+input {
+  cursor: url("/assets/cursor.svg"), text;
+}
+
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #f9c664 50%);
+}
+
+.typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  animation:
+    typing 3s steps(30, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Darumadrop One", sans-serif;
+} */
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +110,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

@@ -1,0 +1,31 @@
+ul,
+ol {
+  margin: 0 0 1.7rem 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+ul {
+  list-style: disc;
+}
+ul > li {
+  margin-bottom: 10px;
+}
+ul > li > p {
+  margin-bottom: 5px;
+}
+ul > li > ul {
+  margin: inherit;
+  margin: 0.7rem 0 1.7rem 0;
+  padding: 0;
+  list-style: none;
+}
+ol {
+  list-style: decimal;
+}
+ol > li {
+  margin-bottom: 10px;
+}
