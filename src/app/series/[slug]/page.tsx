@@ -6,6 +6,7 @@ import { urlForImage } from "../../../../sanity/lib/image";
 import Link from "next/link";
 import { Code } from "../../../../sanity/components/Code";
 import { List } from "../../../../sanity/components/List";
+import { notFound } from "next/navigation";
 
 async function getPost(slug: string) {
   const query = `
@@ -30,6 +31,8 @@ async function getPost(slug: string) {
 
 const Post = async ({ params }: any) => {
   const post = await getPost(params?.slug);
+
+  if (!post) notFound();
 
   return (
     <>

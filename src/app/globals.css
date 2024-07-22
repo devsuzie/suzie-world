@@ -18,10 +18,12 @@ body {
   cursor: url("/assets/cursor.svg"), auto;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 64px;
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 div,

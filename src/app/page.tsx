@@ -1,4 +1,5 @@
 import { client } from "../utils/sanity/client";
+import Image from "next/image";
 import Link from "next/link";
 import Newsletter from "../components/Newsletter";
 
@@ -28,22 +29,26 @@ async function Home() {
       <main>
         {/* Hero section */}
         <section className="hero bg-white-gray">
-          <div className="relative isolate px-6 pt-14 lg:px-8 text-center">
-            <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl font-daruma ">
+          <div className="relative isolate px-6 pt-24 lg:px-8 lg:pt-14 text-center">
+            <h1 className="text-7xl font-bold tracking-tight text-gray-900 md:text-8xl font-daruma ">
               Hello, I&apos;m <br /> Suzie Kim
             </h1>
           </div>
         </section>
 
         <section id="hello" className="bg-white-gray">
-          <div className="py-32">
+          <div className="pt-4 pb-32 md:py-32">
             <div className="mx-auto flex flex-col md:flex-row max-w-7xl items-center md:justify-between p-6 lg:px-8">
               {/* Image Section */}
               <div className="mb-4 md:mb-0 md:w-2/5">
-                <img
+                <Image
                   src="/assets/hello.svg"
-                  alt="Content Image"
-                  className="mx-auto md:mx-0 w-auto h-60"
+                  alt="Welcome to Suzie World"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="mx-auto md:mx-0"
+                  style={{ width: "auto", height: "240px" }} // optional
                 />
               </div>
 
@@ -66,13 +71,38 @@ async function Home() {
             </div>
             <div className="mx-auto flex max-w-7xl justify-center md:justify-end p-6 lg:px-8">
               {/* Button to go to the detail page */}
-              <Link href="/about" className="inline-blockp-2">
-                <img
+              <Link href="/about" className="hidden md:block">
+                <Image
                   src="/assets/cta.svg"
-                  alt="Content Image"
-                  className="mx-auto md:mx-0 w-auto h-36"
+                  alt="Learn more about me!"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="mx-auto md:mx-0"
+                  style={{ width: "auto", height: "144px" }}
                 />
               </Link>
+
+              <div className="md:hidden relative">
+                <Link
+                  href="/about"
+                  className="rounded-md bg-blue px-3.5 py-2.5 font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Learn More
+                </Link>
+                <Image
+                  src="/assets/cursor.svg"
+                  alt="cursor"
+                  width={50}
+                  height={50}
+                  style={{
+                    position: "absolute",
+                    right: "-40px",
+                    top: "40px",
+                    transform: "rotate(-25deg)",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -84,12 +114,12 @@ async function Home() {
         <section className="bg-white-gray">
           <div className="mx-auto max-w-7xl items-center p-6 lg:px-8 ">
             <div className="mx-auto max-w-lg pt-32">
-              <h2 className="text-5xl font-bold tracking-tight text-gray-900 block text-center sm:text-7xl font-daruma">
+              <h2 className="text-6xl font-bold tracking-tight text-gray-900 block text-center sm:text-7xl font-daruma">
                 To Infinity and Beyond the Code
               </h2>
             </div>
 
-            <div className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 py-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 py-10 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
               {posts?.length > 0 &&
                 posts.slice(0, 3).map((post: any) => (
                   <article
@@ -146,7 +176,7 @@ async function Home() {
                 href="/series"
                 className="rounded-md bg-pink px-3.5 py-2.5 font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                More posts
+                All Posts
               </Link>
             </div>
           </div>
