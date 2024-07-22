@@ -55,8 +55,12 @@ const Header = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Link
+              href="/"
+              className="-m-1.5 p-1.5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className="sr-only">Suzie World</span>
               <img className="h-8 w-auto" src="/logo.svg" alt="Logo" />
             </Link>
             <button
@@ -74,13 +78,15 @@ const Header = () => {
               <div className="space-y-2 py-6">
                 <Link
                   href="/series"
-                  className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-gray-900 hover:bg-gray-50 text-3xl"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   SERIES
                 </Link>
                 <Link
                   href="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-gray-900 hover:bg-gray-50 text-3xl"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   ABOUT
                 </Link>

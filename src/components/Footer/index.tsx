@@ -49,7 +49,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="mt-8 border-t border-gray-700 pt-4 text-center text-gray-light">
-        © 2024 Your Name. All rights reserved.
+        All rights reserved © Suzie Kim {new Date().getFullYear()}
       </div>
     </footer>
   );

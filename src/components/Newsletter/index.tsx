@@ -8,18 +8,6 @@ const Newsletter = () => {
   const [emailAddress, setEmailAddress] = useState("");
   const [showForm, setShowForm] = useState(true);
 
-  // const handleSubmit = async (e: FormEvent) => {
-  //   e.preventDefault();
-
-  //   POST().then((res) => {
-  //     if (res.status === 200) {
-  //       setShowForm(false);
-  //     } else {
-  //       setShowForm(true);
-  //     }
-  //   });
-  // };
-
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
@@ -54,7 +42,7 @@ const Newsletter = () => {
           {/* Right Block */}
           <div className="w-full mx-0 max-w-none pt-0">
             {/* Title */}
-            <div className="py-3 font-daruma text-center text-5xl md:text-left">
+            <div className="py-3 font-daruma text-center text-4xl md:text-left md:text-5xl">
               Get new content delivered directly to your inbox
             </div>
 
@@ -73,7 +61,7 @@ const Newsletter = () => {
                     value={emailAddress}
                     onChange={(e) => setEmailAddress(e.target.value)}
                     required
-                    className="h-10 block bg-opacity-0 w-full appearance-none rounded-lg border border-gray-200 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-gray-900 placeholder:text-gray-400 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500"
+                    className="h-12 block bg-opacity-0 w-full appearance-none rounded-lg border border-gray-200 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-gray-900 placeholder:text-gray-400 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500"
                   />
                 </div>
                 <button
