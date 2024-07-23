@@ -42,7 +42,7 @@ async function Home() {
               {/* Image Section */}
               <div className="mb-4 md:mb-0 md:w-2/5">
                 <Image
-                  src="/assets/hello.svg"
+                  src="/assets/hello.png"
                   alt="Welcome to Suzie World"
                   width={0}
                   height={0}

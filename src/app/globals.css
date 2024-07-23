@@ -18,12 +18,11 @@ body {
   cursor: url("/assets/cursor.svg"), auto;
 }
 
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: transparent;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 div,
