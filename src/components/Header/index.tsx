@@ -26,7 +26,12 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <img src="/icon/bars3.png" alt="hamburger" aria-hidden="true" />
+            <img
+              src="/icon/bars3.png"
+              alt="hamburger"
+              aria-hidden="true"
+              width={25}
+            />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 font-daruma">
@@ -65,7 +70,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <img src="/icon/xmark.png" alt="close" />
+              <img src="/icon/xmark.png" alt="close" width={25} />
             </button>
           </div>
           <div className="mt-6 flow-root font-daruma">
