@@ -1,9 +1,6 @@
 "use client";
 
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -29,8 +26,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
-            <img src="/icon/bars3.svg" alt="hamburger" aria-hidden="true" />
+            <img src="/icon/bars3.png" alt="hamburger" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 font-daruma">
@@ -69,8 +65,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              {/* <XMarkIcon className="h-6 w-6" aria-hidden="true" /> */}
-              <img src="/icon/xmark.svg" alt="close" />
+              <img src="/icon/xmark.png" alt="close" />
             </button>
           </div>
           <div className="mt-6 flow-root font-daruma">

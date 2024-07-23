@@ -1,6 +1,5 @@
 import Newsletter from "@/components/Newsletter";
 import { client } from "@/utils/sanity/client";
-import { PHASE_DEVELOPMENT_SERVER } from "next/dist/shared/lib/constants";
 import Link from "next/link";
 
 async function getPostsByTag(tag: string) {
@@ -28,9 +27,9 @@ const Tag = async ({ params }: any) => {
   return (
     <>
       <section className="hero bg-white-gray">
-        <div className="mx-auto max-w-5xl pt-32 pb-60 px-6 lg:px-8">
-          <div className="flex gap-x-5">
-            <h1 className="font-daruma text-7xl">
+        <div className="mx-auto max-w-5xl pt-16 pb-32 md:pt-32 md:pb-60 px-6 lg:px-8">
+          <div className="flex gap-x-5 gap-y-8 flex-col-reverse items-center md:flex-row">
+            <h1 className="font-daruma text-6xl md:text-7xl inline-block break-all">
               #{params.slug.toUpperCase()}
             </h1>
             <span

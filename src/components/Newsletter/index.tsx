@@ -2,7 +2,6 @@
 
 import React, { FormEvent, useState } from "react";
 import "./style.module.css";
-import { POST } from "@/app/api/newsletter/route";
 
 const Newsletter = () => {
   const [emailAddress, setEmailAddress] = useState("");
@@ -27,7 +26,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="bg-gray-dark py-16 px-4">
+    <section className="bg-gray-dark py-8 md:py-16 px-4">
       <div className="mx-auto max-w-6xl items-center justify-between px-6 py-12 lg:py-16 lg:px-8 rounded-2xl bg-white-gray ">
         <div className="mx-auto grid md:gap-y-16 px-0 md:pr-8 md:grid-cols-2030">
           {/* Left Block: image */}

@@ -91,7 +91,7 @@ async function Home() {
                   Learn More
                 </Link>
                 <Image
-                  src="/assets/cursor.svg"
+                  src="/assets/cursor.png"
                   alt="cursor"
                   width={50}
                   height={50}

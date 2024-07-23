@@ -14,7 +14,7 @@ const Footer = () => {
   const toggleSitemap = () => setSitemapOpen(!sitemapOpen);
 
   return (
-    <footer className="bg-gray-dark py-8">
+    <footer className="bg-gray-dark pb-8 md:py-8">
       <div className="mx-auto max-w-7xl p-6 lg:px-8 text-white-gray flex flex-col-reverse gap-y-16 md:flex-row md:gap-y-0">
         {/* Logo Section */}
         <div className="w-full mb-4 flex justify-center md:w-1/2 md:justify-start">
@@ -72,11 +72,11 @@ const Footer = () => {
             <div
               className={`pl-4 md:pl-0 ${seriesOpen ? "block" : "hidden"} md:block`}
             >
-              <Link href="/series/web-development" className="mb-2 block">
-                Web Development
+              <Link href="/series/tag/personal" className="mb-2 block">
+                Personal
               </Link>
-              <Link href="/series/ui-ux-design" className="block">
-                UI/UX Design
+              <Link href="/series/tag/programming" className="block">
+                Programming
               </Link>
             </div>
           </div>
@@ -114,8 +114,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="mt-8 border-t border-gray-700 pt-4 text-center text-gray-light">
-        All rights reserved © Suzie Kim {new Date().getFullYear()}
+      <div className="mt-8 border-t border-[rgba(245,245,245,0.4)] pt-4 text-center text-[rgba(245,245,245,0.4)]">
+        © {new Date().getFullYear()} Suzie World
       </div>
     </footer>
   );

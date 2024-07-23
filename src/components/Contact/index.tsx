@@ -3,7 +3,7 @@ import "./style.module.css";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-dark py-16 px-4">
+    <section className="bg-gray-dark py-8 md:py-16 px-4">
       <div className="mx-auto max-w-6xl items-center justify-between px-6 py-12 lg:py-16 lg:px-8 rounded-2xl bg-white-gray ">
         <div className="mx-auto grid md:gap-y-16 px-0 md:pr-8 md:grid-cols-4060">
           {/* Left Block */}
@@ -27,17 +27,17 @@ const Contact = () => {
               details. See you there!
             </p>
 
-            <div className="grid gap-4 grid-cols-1 lg:gap-8 lg:grid-cols-2 lg:col-span-2 pt-4">
-              <dl className="bg-gray rounded-xl px-8 py-5 flex lg:flex-col gap-x-1">
+            <div className="grid gap-4 grid-cols-1 lg:gap-8 lg:grid-cols-4060 lg:col-span-2 pt-4">
+              <dl className="bg-gray rounded-xl px-5 md:px-8 py-5 flex flex-col gap-x-1">
                 <dt className="font-bold">Email</dt>
                 <dd>
                   <a className="underline" href="mailto:suuuzie18@gmail.com">
-                    suuuzie18@gmail.com
+                    hello@suzie.world
                   </a>
                 </dd>
               </dl>
 
-              <dl className="bg-gray rounded-xl px-8 py-5 flex lg:flex-col gap-x-1">
+              <dl className="bg-gray rounded-xl px-5 md:px-8 py-5 flex flex-col gap-x-1">
                 <dt className="font-bold">LinkedIn</dt>
                 <dd>
                   <a

@@ -26,8 +26,8 @@ async function Blog() {
   return (
     <>
       <section className="hero bg-white-gray">
-        <div className="mx-auto max-w-5xl pt-32 pb-60 px-6 lg:px-8">
-          <div className="flex gap-x-5">
+        <div className="mx-auto max-w-5xl pt-16 pb-32 md:pt-32 md:pb-60 px-6 lg:px-8">
+          <div className="flex gap-x-5 flex-col-reverse items-center md:flex-row">
             <h1 className="font-daruma text-7xl">ALL POSTS</h1>
             <span
               className="flex items-center justify-center"
