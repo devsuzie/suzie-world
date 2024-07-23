@@ -33,7 +33,7 @@ const Newsletter = () => {
           {/* Left Block: image */}
           <div className="flex justify-center items-center w-full mx-0 max-w-lg">
             <img
-              src="/assets/printer.svg"
+              src="/assets/printer.png"
               alt="Printer Image"
               className="mx-auto md:mx-0 w-auto h-52"
             />
