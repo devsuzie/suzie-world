@@ -34,7 +34,7 @@ async function Blog() {
               style={{
                 width: "130px",
                 height: "100px",
-                backgroundImage: "url(/assets/folder.svg)",
+                backgroundImage: "url(/assets/folder.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

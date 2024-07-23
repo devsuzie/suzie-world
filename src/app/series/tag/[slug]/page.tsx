@@ -37,7 +37,7 @@ const Tag = async ({ params }: any) => {
               style={{
                 width: "130px",
                 height: "80px",
-                backgroundImage: "url(/assets/sticker.svg)",
+                backgroundImage: "url(/assets/sticker.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
