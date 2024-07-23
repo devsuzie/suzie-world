@@ -1,48 +1,114 @@
+"use client";
+
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Footer = () => {
+  const [contactOpen, setContactOpen] = useState(false);
+  const [seriesOpen, setSeriesOpen] = useState(false);
+  const [sitemapOpen, setSitemapOpen] = useState(false);
+
+  const toggleContact = () => setContactOpen(!contactOpen);
+  const toggleSeries = () => setSeriesOpen(!seriesOpen);
+  const toggleSitemap = () => setSitemapOpen(!sitemapOpen);
+
   return (
     <footer className="bg-gray-dark py-8">
-      <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 flex-wrap text-white-gray">
+      <div className="mx-auto max-w-7xl p-6 lg:px-8 text-white-gray flex flex-col-reverse gap-y-16 md:flex-row md:gap-y-0">
         {/* Logo Section */}
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
+        <div className="w-full mb-4 flex justify-center md:w-1/2 md:justify-start">
           <img src="/big-logo.svg" alt="Logo" className="h-28" />
         </div>
 
         {/* Columns Section */}
-        <div className="w-full md:w-1/2 flex justify-between">
+        <div className="w-full md:w-1/2 md:flex md:justify-between">
           {/* Contact Column */}
-          <div className="flex flex-col">
-            <h3 className="font-bold mb-2">Contact</h3>
-            {/* For external links or non-Next.js navigation, use <a> with href directly */}
-            <a href="mailto:suuuzie18@gmail.com" className="mb-1">
-              Email
-            </a>
-            <a href="https://www.linkedin.com/in/devsuzie/" target="_blank">
-              LinkedIn
-            </a>
+          <div className="w-full md:w-auto border-b md:border-none border-white py-3 md:py-0">
+            <button
+              onClick={toggleContact}
+              className="flex justify-between items-center w-full text-left md:text-center leading-10"
+            >
+              <h3 className="font-bold">Contact</h3>
+              <span className="md:hidden">
+                {contactOpen ? (
+                  <ChevronUpIcon className="w-5 h-5" />
+                ) : (
+                  <ChevronDownIcon className="w-5 h-5" />
+                )}
+              </span>
+            </button>
+            <div
+              className={`pl-4 md:pl-0 ${contactOpen ? "block" : "hidden"} md:block`}
+            >
+              <a href="mailto:suuuzie18@gmail.com" className="mb-2 block">
+                Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/devsuzie/"
+                target="_blank"
+                className="block"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* Series Column */}
-          <div className="flex flex-col">
-            <h3 className="font-bold mb-2">Series</h3>
-            <Link href="/series/web-development" className="mb-1">
-              Web Development
-            </Link>
-            <Link href="/series/ui-ux-design">UI/UX Design</Link>
+          <div className="w-full md:w-auto border-b md:border-none border-white py-3 md:py-0">
+            <button
+              onClick={toggleSeries}
+              className="flex justify-between items-center w-full text-left md:text-center leading-10"
+            >
+              <h3 className="font-bold">Series</h3>
+              <span className="md:hidden">
+                {seriesOpen ? (
+                  <ChevronUpIcon className="w-5 h-5" />
+                ) : (
+                  <ChevronDownIcon className="w-5 h-5" />
+                )}
+              </span>
+            </button>
+            <div
+              className={`pl-4 md:pl-0 ${seriesOpen ? "block" : "hidden"} md:block`}
+            >
+              <Link href="/series/web-development" className="mb-2 block">
+                Web Development
+              </Link>
+              <Link href="/series/ui-ux-design" className="block">
+                UI/UX Design
+              </Link>
+            </div>
           </div>
 
           {/* Sitemap Column */}
-          <div className="flex flex-col">
-            <h3 className="font-bold mb-2">Sitemap</h3>
-            <Link href="/" className="mb-1">
-              Home
-            </Link>
-            <Link href="/about" className="mb-1">
-              About
-            </Link>
-            <Link href="/series">Series</Link>
+          <div className="w-full md:w-auto border-b md:border-none border-white py-3 md:py-0">
+            <button
+              onClick={toggleSitemap}
+              className="flex justify-between items-center w-full text-left md:text-center leading-10"
+            >
+              <h3 className="font-bold">Sitemap</h3>
+              <span className="md:hidden">
+                {sitemapOpen ? (
+                  <ChevronUpIcon className="w-5 h-5" />
+                ) : (
+                  <ChevronDownIcon className="w-5 h-5" />
+                )}
+              </span>
+            </button>
+            <div
+              className={`pl-4 md:pl-0 ${sitemapOpen ? "block" : "hidden"} md:block`}
+            >
+              <Link href="/" className="mb-2 block">
+                Home
+              </Link>
+              <Link href="/about" className="mb-2 block">
+                About
+              </Link>
+              <Link href="/series" className="block">
+                Series
+              </Link>
+            </div>
           </div>
         </div>
       </div>
