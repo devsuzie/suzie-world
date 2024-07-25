@@ -31,7 +31,7 @@ const Contact = () => {
               <dl className="bg-gray rounded-xl px-5 md:px-8 py-5 flex flex-col gap-x-1">
                 <dt className="font-bold">Email</dt>
                 <dd>
-                  <a className="underline" href="mailto:suuuzie18@gmail.com">
+                  <a className="underline" href="mailto:hello@suzie.world">
                     hello@suzie.world
                   </a>
                 </dd>

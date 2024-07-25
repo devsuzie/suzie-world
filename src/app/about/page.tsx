@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <section className="hero bg-white-gray">
-        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between px-6 pt-36 pb-48 lg:px-8">
+        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between px-6 pt-16 pb-24 lg:pt-36 lg:pb-48 lg:px-8">
           {/* Content section */}
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Hi, I&apos;m Suzie Kim</h1>
@@ -49,7 +49,7 @@ export default function About() {
 
       {/* Intro Section */}
       <section className="intro bg-white-gray">
-        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between px-6 pt-48 pb-24 lg:px-8">
+        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between pt-24 pb-0 px-6 lg:pt-48 lg:pb-24 lg:px-8">
           {/* Content section */}
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Begin the Journey</h1>
@@ -74,7 +74,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mx-auto flex flex-col md:flex-row max-w-7xl items-center md:justify-between px-6 py-24 lg:px-8">
+        <div className="mx-auto flex flex-col md:flex-row max-w-7xl items-center md:justify-between pt-24 pb-0 px-6 lg:pt-48 lg:pb-24 lg:px-8">
           {/* Image Section */}
           <div className="mb-4 md:mb-0 md:w-2/5 flex justify-start">
             <img
@@ -99,7 +99,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between px-6 pt-24 pb-48 lg:px-8">
+        <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between pt-24 pb-12 px-6 lg:pt-48 lg:pb-48 lg:px-8">
           {/* Content section */}
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Sydney, Australia</h1>

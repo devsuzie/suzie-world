@@ -41,7 +41,7 @@ const Footer = () => {
             <div
               className={`pl-4 md:pl-0 ${contactOpen ? "block" : "hidden"} md:block`}
             >
-              <a href="mailto:suuuzie18@gmail.com" className="mb-2 block">
+              <a href="mailto:hello@suzie.world" className="mb-2 block">
                 Email
               </a>
               <a
