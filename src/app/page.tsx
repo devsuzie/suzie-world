@@ -38,7 +38,7 @@ async function Home() {
 
         <section id="hello" className="bg-white-gray">
           <div className="pt-4 pb-32 md:py-32">
-            <div className="mx-auto flex flex-col md:flex-row max-w-7xl items-center md:justify-between p-6 lg:px-8">
+            <div className="mx-auto flex flex-col md:flex-row max-w-7xl items-center md:justify-between p-4 lg:p-8">
               {/* Image Section */}
               <div className="mb-4 md:mb-0 md:w-2/5">
                 <Image
@@ -112,8 +112,8 @@ async function Home() {
 
         {/* Blog snippets */}
         <section className="bg-white-gray">
-          <div className="mx-auto max-w-7xl items-center p-6 lg:px-8 ">
-            <div className="mx-auto max-w-lg pt-32">
+          <div className="mx-auto max-w-7xl items-center p-4 lg:p-8">
+            <div className="mx-auto max-w-lg pt-16 lg:pt-24">
               <h2 className="text-6xl font-bold tracking-tight text-gray-900 block text-center sm:text-7xl font-daruma">
                 To Infinity and Beyond the Code
               </h2>
