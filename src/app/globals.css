@@ -6,10 +6,25 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 @font-face {
   font-family: "Darumadrop One";
   src: url("/fonts/DarumadropOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/fonts/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/fonts/Karla-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 html,

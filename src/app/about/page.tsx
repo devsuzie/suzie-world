@@ -52,7 +52,7 @@ export default function About() {
         <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between px-6 pt-48 pb-24 lg:px-8">
           {/* Content section */}
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
-            <h1 className="text-7xl font-daruma">Praha, Czechia</h1>
+            <h1 className="text-7xl font-daruma">Begin the Journey</h1>
             <p className="my-6 leading-8 text-gray-600">
               My European backpacking adventure in search of direction led me to
               the stunning city of Prague. The beauty of the city convinced me
