@@ -29,7 +29,7 @@ async function Home() {
       <main>
         {/* Hero section */}
         <section className="hero bg-white-gray">
-          <div className="relative isolate px-6 pt-24 lg:px-8 lg:pt-14 text-center">
+          <div className="relative isolate px-6 pt-16 lg:px-8 lg:pt-24 text-center">
             <h1 className="text-7xl font-bold tracking-tight text-gray-900 md:text-8xl font-daruma ">
               Hello, I&apos;m <br /> Suzie Kim
             </h1>
