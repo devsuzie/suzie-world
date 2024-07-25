@@ -121,13 +121,6 @@ pre[class*="language-"] {
   cursor: help;
 }
 
-/* Date Responsive Display */
-@media (max-width: 900px) {
-  pre {
-    font-size: 0.7rem;
-  }
-}
-
 /* Highlighted code */
 code {
   background-color: rgba(249, 198, 100, 0.2);
@@ -135,6 +128,6 @@ code {
   padding: 0 0.5em;
   margin: 0 0.2em;
   border-radius: 0.3em;
-  font-size: 85%;
+  font-size: 1rem;
   font-family: "Menlo";
 }
