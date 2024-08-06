@@ -119,11 +119,10 @@ const myPortableTextComponents = {
     bullet: List,
   },
   block: {
-    blockquote: ({ value }: any) => {
+    blockquote: ({ children }: any) => {
       return (
-        // <blockquote className="border-l-4 border-blue mb-7 px-5 bg-[rgba(153,211,244,0.3)] rounded-tr-lg rounded-br-lg [&_p]:my-4">
         <blockquote className="border-l-4 border-blue mb-7 pl-5 pr-4 bg-[rgba(153,211,244,0.3)] rounded-custom font-sans box-border">
-          <p className="py-4">{value.children[0].text}</p>
+          <p className="py-4">{children}</p>
         </blockquote>
       );
     },
