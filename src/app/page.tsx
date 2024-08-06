@@ -73,7 +73,7 @@ async function Home() {
               {/* Button to go to the detail page */}
               <Link href="/about" className="hidden md:block">
                 <Image
-                  src="/assets/cta.svg"
+                  src="/assets/about.png"
                   alt="Learn more about me!"
                   width={0}
                   height={0}

@@ -3,6 +3,7 @@
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,15 +36,18 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 font-daruma">
-          <Link
+          <StyledLink
             href="/series"
             className="font-semibold leading-6 text-gray-900"
           >
             SERIES
-          </Link>
-          <Link href="/about" className="font-semibold leading-6 text-gray-900">
+          </StyledLink>
+          <StyledLink
+            href="/about"
+            className="font-semibold leading-6 text-gray-900"
+          >
             ABOUT
-          </Link>
+          </StyledLink>
         </div>
       </nav>
 
@@ -100,3 +104,13 @@ const Header = () => {
 };
 
 export default Header;
+
+const StyledLink = styled.a`
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 50%,
+      #f9c664 50%
+    );
+  }
+`;

@@ -81,7 +81,7 @@ const myPortableTextComponents = {
         width={0}
         height={0}
         sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
+        style={{ width: "100%", height: "auto", marginBottom: "1.5rem" }}
       />
     ),
     code: Code,

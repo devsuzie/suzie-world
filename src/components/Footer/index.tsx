@@ -1,8 +1,8 @@
 "use client";
 
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid";
-import Link from "next/link";
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 
 const Footer = () => {
   const [contactOpen, setContactOpen] = useState(false);
@@ -41,16 +41,19 @@ const Footer = () => {
             <div
               className={`pl-4 md:pl-0 ${contactOpen ? "block" : "hidden"} md:block`}
             >
-              <a href="mailto:hello@suzie.world" className="mb-2 block">
+              <StyledLink
+                href="mailto:hello@suzie.world"
+                className="mb-2 block"
+              >
                 Email
-              </a>
-              <a
+              </StyledLink>
+              <StyledLink
                 href="https://www.linkedin.com/in/devsuzie/"
                 target="_blank"
                 className="block"
               >
                 LinkedIn
-              </a>
+              </StyledLink>
             </div>
           </div>
 
@@ -72,12 +75,12 @@ const Footer = () => {
             <div
               className={`pl-4 md:pl-0 ${seriesOpen ? "block" : "hidden"} md:block`}
             >
-              <Link href="/series/tag/personal" className="mb-2 block">
+              <StyledLink href="/series/tag/personal" className="mb-2 block">
                 Personal
-              </Link>
-              <Link href="/series/tag/programming" className="block">
+              </StyledLink>
+              <StyledLink href="/series/tag/programming" className="block">
                 Programming
-              </Link>
+              </StyledLink>
             </div>
           </div>
 
@@ -99,15 +102,15 @@ const Footer = () => {
             <div
               className={`pl-4 md:pl-0 ${sitemapOpen ? "block" : "hidden"} md:block`}
             >
-              <Link href="/" className="mb-2 block">
+              <StyledLink href="/" className="mb-2 block">
                 Home
-              </Link>
-              <Link href="/about" className="mb-2 block">
+              </StyledLink>
+              <StyledLink href="/about" className="mb-2 block">
                 About
-              </Link>
-              <Link href="/series" className="block">
+              </StyledLink>
+              <StyledLink href="/series" className="block">
                 Series
-              </Link>
+              </StyledLink>
             </div>
           </div>
         </div>
@@ -122,3 +125,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const StyledLink = styled.a`
+  &:hover {
+    opacity: 0.5;
+  }
+`;
