@@ -22,8 +22,8 @@ const Contact = () => {
             </h2>
 
             <p className="my-2 text-gray-600">
-              Feel free to get in touch with me! I'm always happy to connect.
-              You can reach out to me via email or find me on LinkedIn:
+              Feel free to get in touch with me! I&apos;m always happy to
+              connect. You can reach out to me via email or find me on LinkedIn:
             </p>
 
             <div className="grid gap-4 grid-cols-1 lg:gap-8 lg:grid-cols-4060 lg:col-span-2 pt-4">

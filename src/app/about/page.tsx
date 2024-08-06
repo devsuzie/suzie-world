@@ -11,13 +11,13 @@ export default function About() {
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Hi, I&apos;m Suzie Kim</h1>
             <p className="my-6 leading-8 text-gray-600">
-              I'm a software engineer who loves creating and building things.
-              I&apos;ve been diving into the world of software engineering for
-              over four years, especially in front-end development. What keeps
-              me going is my passion for learning and creating. There&apos;s
-              always something new to discover in coding, and it&apos;s so cool
-              to see those discoveries make a difference in our everyday lives.
-              Plus, it&apos;s fun!
+              I&apos;m a software engineer who loves creating and building
+              things. I&apos;ve been diving into the world of software
+              engineering for over four years, especially in front-end
+              development. What keeps me going is my passion for learning and
+              creating. There&apos;s always something new to discover in coding,
+              and it&apos;s so cool to see those discoveries make a difference
+              in our everyday lives. Plus, it&apos;s fun!
             </p>
             <a
               href="/pdfs/resume.pdf"
@@ -104,7 +104,7 @@ export default function About() {
               Australia. I joined Bill, an American company with a branch in
               Sydney. As a software engineer, I got to work on developing their
               invoice system, using my skills and experiences to make a real
-              impact. Now, I'm at a turning point in my career, excited and
+              impact. Now, I&apos;m at a turning point in my career, excited and
               ready to explore new opportunities in this dynamic city.
             </p>
           </div>
