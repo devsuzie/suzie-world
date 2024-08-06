@@ -11,23 +11,18 @@ export default function About() {
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Hi, I&apos;m Suzie Kim</h1>
             <p className="my-6 leading-8 text-gray-600">
-              Hello! I&apos;m Suzie Kim, a Sydney-based software engineer with
-              over four years of experience specializing in front-end
-              development. My career has been driven by a love for learning and
-              creating new things. What excites me about coding is the perpetual
-              opportunity to learn; it&apos;s never been easier to integrate new
-              discoveries into our daily lives. Plus, it&apos;s incredibly fun!
-              My journey has equipped me with the knowledge and skills to work
-              effectively, create impactful products, collaborate with teams,
-              schedule timelines, and break projects down into manageable
-              sprints. Now, I&apos;m passionate about bringing visions to life
-              in the digital world, including my own. Let&apos;s create
-              something amazing together.
+              I'm a software engineer who loves creating and building things.
+              I&apos;ve been diving into the world of software engineering for
+              over four years, especially in front-end development. What keeps
+              me going is my passion for learning and creating. There&apos;s
+              always something new to discover in coding, and it&apos;s so cool
+              to see those discoveries make a difference in our everyday lives.
+              Plus, it&apos;s fun!
             </p>
             <a
               href="/pdfs/resume.pdf"
               download="Resume_SuzieKim.pdf"
-              className="inline-flex items-center gap-x-1 rounded-md bg-blue px-3.5 py-2.5 font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="inline-flex items-center gap-x-1 rounded-md bg-blue px-3.5 py-2.5 font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:bg-opacity-70"
             >
               Download Resume
               <ArrowDownTrayIcon className="block h-6 w-6" aria-hidden="true" />
@@ -52,15 +47,15 @@ export default function About() {
         <div className="mx-auto flex flex-col-reverse md:flex-row max-w-7xl items-center md:justify-between pt-24 pb-0 px-6 lg:pt-48 lg:pb-24 lg:px-8">
           {/* Content section */}
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
-            <h1 className="text-7xl font-daruma">Begin the Journey</h1>
+            <h1 className="text-7xl font-daruma">Praha, Czechia</h1>
             <p className="my-6 leading-8 text-gray-600">
-              My European backpacking adventure in search of direction led me to
-              the stunning city of Prague. The beauty of the city convinced me
-              to stay, and a fortuitous meeting with a developer at a travel
-              agency ignited my passion for development. This marked the
-              beginning of my journey as an engineer, where I started to learn
-              and grow in the tech field, setting the foundation for my future
-              career.
+              While backpacking across Europe, I ended up in the stunning city
+              of Prague. I was so taken by its beauty that I decided to stick
+              around longer than I had planned. A random chat with a developer
+              at a company sparked my interest in software development. That was
+              the beginning of my journey into tech. I dove headfirst into
+              learning how to code, and that experience in Prague really set the
+              stage for my career as an engineer.
             </p>
           </div>
 
@@ -88,13 +83,14 @@ export default function About() {
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Seoul, Korea</h1>
             <p className="my-6 leading-8 text-gray-600">
-              In Seoul, I embarked on my professional journey as a developer,
-              securing my first job and dedicating three years to the craft. At
-              Bank Salad, a pioneering Seoul-based fintech company, I honed my
-              skills as the team&apos;s sole front-end developer. My tenure
-              involved working on pivotal projects and collaborating closely
-              with the team, shaping my expertise and work ethic in the bustling
-              heart of South Korea.
+              I was thrilled to kick off my career as a developer in my home
+              country. My first job was at Bank Salad, a leading fintech company
+              in Korea, where I spent over two years refining my skills as a
+              front-end developer. I worked on web applications focused on
+              financial transactions and collaborated closely with colleagues
+              from various departments. This experience not only sharpened my
+              technical abilities but also significantly shaped my expertise and
+              work ethic.
             </p>
           </div>
         </div>
@@ -104,13 +100,11 @@ export default function About() {
           <div className="mb-4 pr-5 md:mb-0 md:w-3/5">
             <h1 className="text-7xl font-daruma">Sydney, Australia</h1>
             <p className="my-6 leading-8 text-gray-600">
-              Seeking new adventures and challenges, I moved to Sydney, where I
-              joined Bill, an American company with a local branch. As a
-              software engineer, I played a key role in developing their invoice
-              system, leveraging my skills and experiences to make a significant
-              impact. Now, at a turning point in my career, I&apos;m poised to
-              transition from my role at the company to embrace the freedom and
-              possibilities of becoming a solo trader (freelancer engineer),
+              Looking for new adventures and challenges, I decided to move to
+              Australia. I joined Bill, an American company with a branch in
+              Sydney. As a software engineer, I got to work on developing their
+              invoice system, using my skills and experiences to make a real
+              impact. Now, I'm at a turning point in my career, excited and
               ready to explore new opportunities in this dynamic city.
             </p>
           </div>

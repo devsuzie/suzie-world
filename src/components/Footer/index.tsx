@@ -105,11 +105,11 @@ const Footer = () => {
               <StyledLink href="/" className="mb-2 block">
                 Home
               </StyledLink>
-              <StyledLink href="/about" className="mb-2 block">
-                About
-              </StyledLink>
-              <StyledLink href="/series" className="block">
+              <StyledLink href="/series" className="mb-2 block">
                 Series
+              </StyledLink>
+              <StyledLink href="/about" className="block">
+                About
               </StyledLink>
             </div>
           </div>
