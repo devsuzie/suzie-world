@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 export const meta = {
   title: "Suzie World",
   description: "Welcome to Suzie World",
@@ -25,14 +27,7 @@ export default function RootLayout({
         <meta property="og:image" content={meta.image} />
 
         {/* Google tag (gtag.js) */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPWP13FV8T"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-RPWP13FV8T');
-        </script> */}
+        <GoogleAnalytics gaId="G-RPWP13FV8T" />
       </head>
       <body>
         <Header />
