@@ -25,14 +25,14 @@ export default function RootLayout({
         <meta property="og:image" content={meta.image} />
 
         {/* Google tag (gtag.js) */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPWP13FV8T"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPWP13FV8T"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'G-RPWP13FV8T');
-    </script>
+          gtag('config', 'G-RPWP13FV8T');
+        </script> */}
       </head>
       <body>
         <Header />
