@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
+export const meta = {
   title: "Suzie World",
-  description: "World of Suzie",
+  description: "Welcome to Suzie World",
+  image: "/images/thumbnail.png",
 };
 
 export default function RootLayout({
@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}>{children}</body> */}
+      <head>
+        <meta name="robots" content="follow, index" />
+        <meta name="description" content={meta.description} />
+        <meta property="og:site_name" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+      </head>
       <body>
         <Header />
         {children}
