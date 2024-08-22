@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const meta = {
   title: "Suzie World",
@@ -27,12 +28,14 @@ export default function RootLayout({
         <meta property="og:image" content={meta.image} />
 
         {/* Google tag (gtag.js) */}
+        {/* https://nextjs.org/docs/messages/next-script-for-ga#use-nextthird-parties-to-add-google-analytics */}
         <GoogleAnalytics gaId="G-RPWP13FV8T" />
       </head>
       <body>
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
