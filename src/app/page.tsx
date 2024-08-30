@@ -128,7 +128,7 @@ async function Home() {
                   >
                     <h2 className="font-semibold tracking-tight text-zinc-800">
                       <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-gray opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
-                      <Link href={`/series/${post?.slug.current}`}>
+                      <Link href={`/blog/${post?.slug.current}`}>
                         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                         <span className="relative z-10">{post.title}</span>
                       </Link>
@@ -173,7 +173,7 @@ async function Home() {
 
             <div className="mt-10 mb-28 flex items-center justify-center gap-x-6">
               <Link
-                href="/series"
+                href="/blog"
                 className="rounded-md bg-pink px-3.5 py-2.5 font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 All Posts

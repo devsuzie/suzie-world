@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { slugify } from "@/utils/helpers";
 import { client } from "@/utils/sanity/client";
 import { PortableText } from "@portabletext/react";
@@ -7,6 +8,40 @@ import Link from "next/link";
 import { Code } from "../../../../sanity/components/Code";
 import { List } from "../../../../sanity/components/List";
 import { notFound } from "next/navigation";
+
+type BlogPostProps = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({
+  params,
+}: BlogPostProps): Promise<Metadata> {
+  const { slug } = params;
+
+  // Fetch metadata from Sanity
+  const query = `*[_type == "post" && slug.current == $slug][0]{
+    title,
+    excerpt
+  }`;
+
+  const post = await client.fetch(query, { slug });
+
+  return {
+    title: post?.title || "Suzie World",
+    description: post?.excerpt || "Welcome to Suzie World",
+    openGraph: {
+      title: post?.title || "Suzie World",
+      description: post?.excerpt || "Welcome to Suzie World",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@hellosuzieworld",
+      title: post?.title || "Suzie World",
+      description: post?.excerpt || "Welcome to Suzie World",
+      images: ["/images/thumbnail.png"],
+    },
+  };
+}
 
 async function getPost(slug: string) {
   const query = `
@@ -45,7 +80,7 @@ const Post = async ({ params }: any) => {
             {post?.tags?.map((tag: any) => (
               <Link
                 key={tag?._id}
-                href={`/series/tag/${tag.slug.current}`}
+                href={`/blog/tag/${tag.slug.current}`}
                 className="text-xl"
               >
                 {/* <span className="mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900"> */}

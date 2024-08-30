@@ -1,5 +1,11 @@
 import Contact from "@/components/Contact";
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Suzie World | About",
+  description: "Get to know Suzie Kim",
+};
 
 // app/about.page.tsx
 export default function About() {

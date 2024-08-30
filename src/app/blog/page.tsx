@@ -1,6 +1,13 @@
 import Newsletter from "@/components/Newsletter";
 import { client } from "../../utils/sanity/client";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Suzie World | Blog",
+  description:
+    "Read about my journey through various software projects, including successes and lessons learned.",
+};
 
 async function getPosts() {
   const query = `
@@ -50,7 +57,7 @@ async function Blog() {
                 <div className="md:col-span-3 group relative flex flex-col items-start">
                   <h2 className="font-semibold tracking-tight text-zinc-800">
                     <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-gray opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <Link href={`/series/${post?.slug.current}`}>
+                    <Link href={`/blog/${post?.slug.current}`}>
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                       <span className="relative z-10">{post.title}</span>
                     </Link>

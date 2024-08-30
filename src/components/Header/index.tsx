@@ -37,10 +37,10 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12 font-daruma">
           <StyledLink
-            href="/series"
+            href="/blog"
             className="font-semibold leading-6 text-gray-900"
           >
-            SERIES
+            BLOG
           </StyledLink>
           <StyledLink
             href="/about"
@@ -81,11 +81,11 @@ const Header = () => {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  href="/series"
+                  href="/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-gray-900 hover:bg-gray-50 text-3xl"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  SERIES
+                  BLOG
                 </Link>
                 <Link
                   href="/about"

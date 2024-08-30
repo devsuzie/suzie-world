@@ -6,11 +6,11 @@ import styled from "@emotion/styled";
 
 const Footer = () => {
   const [contactOpen, setContactOpen] = useState(false);
-  const [seriesOpen, setSeriesOpen] = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
   const [sitemapOpen, setSitemapOpen] = useState(false);
 
   const toggleContact = () => setContactOpen(!contactOpen);
-  const toggleSeries = () => setSeriesOpen(!seriesOpen);
+  const toggleBlog = () => setBlogOpen(!blogOpen);
   const toggleSitemap = () => setSitemapOpen(!sitemapOpen);
 
   return (
@@ -57,15 +57,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Series Column */}
+          {/* Blog Column */}
           <div className="w-full md:w-auto border-b md:border-none border-white py-3 md:py-0">
             <button
-              onClick={toggleSeries}
+              onClick={toggleBlog}
               className="flex justify-between items-center w-full text-left md:text-center leading-10"
             >
-              <h3 className="font-bold">Series</h3>
+              <h3 className="font-bold">Blog</h3>
               <span className="md:hidden">
-                {seriesOpen ? (
+                {blogOpen ? (
                   <ChevronUpIcon className="w-5 h-5" />
                 ) : (
                   <ChevronDownIcon className="w-5 h-5" />
@@ -73,12 +73,12 @@ const Footer = () => {
               </span>
             </button>
             <div
-              className={`pl-4 md:pl-0 ${seriesOpen ? "block" : "hidden"} md:block`}
+              className={`pl-4 md:pl-0 ${blogOpen ? "block" : "hidden"} md:block`}
             >
-              <StyledLink href="/series/tag/personal" className="mb-2 block">
+              <StyledLink href="/blog/tag/personal" className="mb-2 block">
                 Personal
               </StyledLink>
-              <StyledLink href="/series/tag/programming" className="block">
+              <StyledLink href="/blog/tag/programming" className="block">
                 Programming
               </StyledLink>
             </div>
@@ -105,8 +105,8 @@ const Footer = () => {
               <StyledLink href="/" className="mb-2 block">
                 Home
               </StyledLink>
-              <StyledLink href="/series" className="mb-2 block">
-                Series
+              <StyledLink href="/blog" className="mb-2 block">
+                Blog
               </StyledLink>
               <StyledLink href="/about" className="block">
                 About
